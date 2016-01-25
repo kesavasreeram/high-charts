@@ -1,0 +1,37 @@
+{
+  "name": "high-charts",
+  "description": "POC for highcharts",
+  "main": "index.html",
+  "authors": [
+    "Kesava Sreeram, Talabattula"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "angular",
+    "gulp",
+    "highcharts",
+    "bower"
+  ],
+  "homepage": "https://github.com/kesavasreeram/high-charts",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "~1.2.21",
+    "angular-mocks": "1.2.x",
+    "bootstrap-sass-official": "3.1.x",
+    "angular-resource": "~1.2.21",
+    "angular-route": "~1.2.21",
+    "modernizr": "2.8.x",
+    "angular": "~1.4.9",
+    "gulp": "~3.9.0"
+  }
+}
