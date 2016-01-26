@@ -9,8 +9,6 @@ bower_components/*
 # node
 node_modules/
 node_modules/*
-gulp/
-gulp/*
 
 # compiled files
 www/*
