@@ -1,12 +1,16 @@
-# Atari 2600 (Stella) support for multiple assemblers
-# - DASM
-# - CC65
+# webstorm
+.idea/
+.idea/*
 
-# Assembled binaries and object directories
-obj/
-a.out
-*.bin
-*.a26
+# bower
+bower_components/
+bower_components/*
 
-# Add in special Atari 7800-based binaries for good measure
-*.a78
+# node
+node_modules/
+node_modules/*
+gulp/
+gulp/*
+
+# compiled files
+www/*
