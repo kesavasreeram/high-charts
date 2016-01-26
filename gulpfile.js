@@ -25,7 +25,7 @@ var serve = require('gulp-serve');
 // Syntax gulp.task('<task name>',['<dependency tasks which are executed before
 // executing this task>'], '<function: what needs to be done while executing this task>')
 
-gulp.task('default', ['styles'], function() {
+gulp.task('default', ['styles', 'scripts'], function() {
     console.log('This is default task');
 });
 
@@ -66,7 +66,10 @@ gulp.task('watch', function(){
 
 /***************** Scripts **********************/
 gulp.task('scripts',function(){
-    gulp.src(['./bower_components/angular/angular.js'])
+    //Angular
+    //Dont include minified js files as you will minify the concatinated file later
+    gulp.src(['./bower_components/angular/**/*.js', '!./bower_components/angular/**/*.min.js',
+            './bower_components/highcharts/highcharts.src.js', './bower_components/highcharts/highstock.src.js'])
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./www/scripts'));
 })

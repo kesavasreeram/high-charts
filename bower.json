@@ -18,5 +18,8 @@
   ],
   "dependencies": {
     "angular": "~1.4.9"
+  },
+  "devDependencies": {
+    "highcharts": "~4.2.1"
   }
 }
