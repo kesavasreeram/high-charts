@@ -14,6 +14,12 @@ var sass = require('gulp-sass');
 // concatinating the compiled files
 var concat = require('gulp-concat');
 
+// inject
+var inject = require('gulp-inject');
+
+// serve
+var serve = require('gulp-serve');
+
 // When you give 'gulp <task name>' command in terminal this task will be invoked
 // If no task name is specified it will execute the 'default' task
 // Syntax gulp.task('<task name>',['<dependency tasks which are executed before
@@ -64,3 +70,7 @@ gulp.task('scripts',function(){
         .pipe(concat('app.js'))
         .pipe(gulp.dest('./www/scripts'));
 })
+
+
+/******************* Serve *********************/
+gulp.task('serve',serve('www'));
